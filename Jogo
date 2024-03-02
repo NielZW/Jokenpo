@@ -1,0 +1,44 @@
+ritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 01/03/2024
+Var
+// Seção de Declarações das variáveis 
+   Jogador1, Jogador2 : inteiro
+   
+   
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+    Papel
+    Escreval ("***** Jogo do Papel/Pedra/Tesoura*****")
+    escreval ("1 - Papel")
+    escreval ("2 - Pedra")
+    escreval ("3 - Tesoura")
+    escreva ("Jogador1 - Escolha sua jogada : ")
+    leia (jogador1)
+    escreva ("Jogador2 - Escolha sua jogada : ")
+    leia (jogador2)
+    
+    Se (Jogador1=Papel) = (Jogador2=Pedra) entao
+      escreva ("O jogador 1 ganhou")
+      senao
+      Se (Jogador2=Papel) = (Jogador1=Pedra) entao
+      escreva ("O jogador 2 ganhou")
+      senao
+      se (Jogador1=Tesoura) = (Jogador2=papel) entao
+      escreva ("O jogador 1 ganhou")
+      se (Jogador2=Tesoura) e (Jogador1=papel) entao
+      escreva ("O jogador 2 ganhou")
+      se (Jogador1=Pedra) e (Jogador2=Tesoura) entao
+      escreva ("O jogador 1 ganhou")
+      se (Jogador2=Pedra) e (Jogador1=Tesoura) entao
+      escreva ("O jogador 2 ganhou")
+
+    fimse
+    
+   
+
+Fimalgoritmo
